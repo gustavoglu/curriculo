@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Curriculo.Domain.Core\Curriculo.Domain.Core.csproj" />
+    <ProjectReference Include="..\Curriculo.Infra.Bus\Curriculo.Infra.Bus.csproj" />
+    <ProjectReference Include="..\Curriculo.Infra.Data\Curriculo.Infra.Data.csproj" />
+    <ProjectReference Include="..\Curriculo.Infra.Identity\Curriculo.Infra.Identity.csproj" />
+  </ItemGroup>
+
+</Project>
